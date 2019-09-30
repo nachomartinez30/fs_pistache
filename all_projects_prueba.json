@@ -1,0 +1,62 @@
+/* 
+    GET muestra todos los proyectos para PANTALLA_1 
+*/
+{
+  "projects": [
+    {
+      "id": 1,
+      "cve_proyecto": "2017-4-292577",
+      "titulo": "Diseño de un sistema forestal para selvas productivas de México",
+      "fecha_inicio": "29/04/2017",
+      "fecha_fin": "15/05/2020",
+      "monto_autorizado": "3103449.80",
+      "estatus": "vigente",
+      "acuerdo": "FSIDITF/2018/36/SO/10",
+      "link_acuerdo": "http://file-server/*.pdf"
+    },
+    {
+      "id": 2,
+      "cve_proyecto": "2018-C02-A3-S-131466",
+      "titulo": "Diseño y construcción de equipo semiautomático para la extracción de cera de candelilla orgánica.",
+      "fecha_inicio": "",
+      "fecha_fin": "",
+      "monto_autorizado": "",
+      "estatus": "vigente",
+      "acuerdo": "FSIDITF/ST/093/19",
+      "link_acuerdo": "http://file-server/*.pdf"
+    },
+    {
+      "id": 3,
+      "cve_proyecto": "2017-C02-A4-S-131484",
+      "titulo": "lorem ipsum 2017-C02-A4-S-131484",
+      "fecha_inicio": "29/04/1999",
+      "fecha_fin": "29/04/2019",
+      "monto_autorizado": "999999999",
+      "estatus": "vigente",
+      "acuerdo": "LOREM911557Q-484",
+      "link_acuerdo": "http://file-server/*.pdf"
+    },
+    {
+      "id": 4,
+      "cve_proyecto": "2018-C04-A3-S-4457",
+      "titulo": "lorem ipsum 2018-C04-A3-S-4457",
+      "fecha_inicio": "29/04/1999",
+      "fecha_fin": "29/04/2019",
+      "monto_autorizado": "999999999",
+      "estatus": "vigente",
+      "acuerdo": "LOREM911557Q-484",
+      "link_acuerdo": "http://file-server/*.pdf"
+    },
+    {
+      "id": 5,
+      "cve_proyecto": "2019-C75-A43-S-13478",
+      "titulo": "lorem ipsum 2019-C75-A43-S-13478",
+      "fecha_inicio": "29/04/1999",
+      "fecha_fin": "29/04/2019",
+      "monto_autorizado": "999999999",
+      "estatus": "vigente",
+      "acuerdo": "LOREM911557Q-484",
+      "link_acuerdo": "http://file-server/*.pdf"
+    }
+  ]
+}
