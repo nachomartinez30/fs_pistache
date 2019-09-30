@@ -1,0 +1,202 @@
+{
+  "project": [
+    {
+      "id": "2018-C02-A3-S-131466",
+      "cve_proyecto": "2018-C02-A3-S-131466",
+      "titulo": "Diseño y construcción de equipo semiautomático para la extracción de cera de candelilla orgánica.",
+      "responsable_tecnico": "Dr. Guillermo Cristian Gpe. Martinez Avila ",
+      "responsable_admin": "Lic. Omar Alejandro Leija Gutierrez ",
+      "acuerdo": "FSIDITF/2019/38/SO/15",
+      "institucion_responsable": "Universidad Autónoma de Nuevo León",
+      "monto_total_autorizado": "",
+      "monto_total_ejercido": "",
+      "procentaje_uso": "",
+      "estatus": "vigente",
+      "carta_finiquito": "No",
+      "area_usuaria": "Gerencia de Fomento a la Producción Forestal Sustentable",
+      "estapas": [
+        {
+          "num_etapa": 1,
+          "fecha_inicio": "20/06/2019",
+          "fecha_fin": "20/06/2020",
+          "monto_autorizado": "",
+          "monto_entregado": ""
+        },
+        {
+          "num_etapa": 2,
+          "fecha_inicio": "20/06/2020",
+          "fecha_fin": "20/06/2021",
+          "monto_autorizado": "",
+          "monto_entregado": ""
+        }
+      ],
+      "documentos": [
+        {
+          "fecha": "12/07/2019",
+          "titulo": "Oficio FSIDITF-ST-116-2019",
+          "emisor": "SA",
+          "descripcion": "Envío de productos de 1 era etapa para revisión de área usuaria ",
+          "source": "http://file-server/*.pdf",
+          "comentarios": [
+            {
+              "autor": "SA",
+              "fecha": "12/07/2019",
+              "contenido": "ea molestias quasi exercitationem repellat qui ipsa sit aut"
+            },
+            {
+              "autor": "ST",
+              "fecha": "24/10/2019",
+              "contenido": "nesciunt quas odio"
+            }
+          ]
+        },
+        {
+          "fecha": "12/10/2019",
+          "titulo": "Oficio FSIDITF-ST-120-2019",
+          "emisor": "SA",
+          "descripcion": "Envío de observaciones del area usuaria al Resp. Técn.",
+          "source": "http://file-server/*.pdf",
+          "comentarios": [
+            {
+              "autor": "ST",
+              "fecha": "24/04/2019",
+              "contenido": "nesciunt quas odio"
+            },
+            {
+              "autor": "SA",
+              "fecha": "12/07/2019",
+              "contenido": "ea molestias quasi exercitationem repellat qui ipsa sit aut"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cve_proyecto": "2018-C02-A3-S-131444",
+      "titulo": "Diseño y construcción de equipo semiautomático para la extracción de cera de candelilla orgánica.",
+      "responsable_tecnico": "Dr. Guillermo Cristian Gpe. Martinez Avila ",
+      "responsable_admin": "Lic. Omar Alejandro Leija Gutierrez ",
+      "acuerdo": "FSIDITF/2019/38/SO/15",
+      "institucion_responsable": "Universidad Autónoma de Nuevo León",
+      "monto_total_autorizado": "",
+      "monto_total_ejercido": "",
+      "procentaje_uso": "",
+      "estatus": "vigente",
+      "carta_finiquito": "No",
+      "area_usuaria": "Gerencia de Fomento a la Producción Forestal Sustentable",
+      "estapas": [
+        {
+          "num_etapa": 1,
+          "fecha_inicio": "20/06/2019",
+          "fecha_fin": "20/06/2020",
+          "monto_autorizado": "",
+          "monto_entregado": ""
+        },
+        {
+          "num_etapa": 2,
+          "fecha_inicio": "20/06/2020",
+          "fecha_fin": "20/06/2021",
+          "monto_autorizado": "",
+          "monto_entregado": ""
+        }
+      ],
+      "documentos": [
+        {
+          "fecha": "12/07/2019",
+          "titulo": "Oficio FSIDITF-ST-116-2019",
+          "emisor": "SA",
+          "descripcion": "Envío de productos de 1 era etapa para revisión de área usuaria ",
+          "source": "http://file-server/*.pdf",
+          "comentarios": [
+            {
+              "autor": "SA",
+              "fecha": "12/07/2019",
+              "contenido": "ea molestias quasi exercitationem repellat qui ipsa sit aut"
+            },
+            {
+              "autor": "ST",
+              "fecha": "24/10/2019",
+              "contenido": "nesciunt quas odio"
+            }
+          ]
+        },
+        {
+          "fecha": "12/10/2019",
+          "titulo": "Oficio FSIDITF-ST-120-2019",
+          "emisor": "SA",
+          "descripcion": "Envío de observaciones del area usuaria al Resp. Técn.",
+          "source": "http://file-server/*.pdf",
+          "comentarios": [
+            {
+              "autor": "ST",
+              "fecha": "24/04/2019",
+              "contenido": "nesciunt quas odio"
+            },
+            {
+              "autor": "SA",
+              "fecha": "12/07/2019",
+              "contenido": "ea molestias quasi exercitationem repellat qui ipsa sit aut"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "all": [
+    {
+      "id": 1,
+      "cve_proyecto": "2017-4-292577",
+      "titulo": "Diseño de un sistema forestal para selvas productivas de México",
+      "fecha_inicio": "29/04/2017",
+      "fecha_fin": "15/05/2020",
+      "monto_autorizado": "3103449.80",
+      "estatus": "vigente",
+      "acuerdo": "FSIDITF/2018/36/SO/10",
+      "link_acuerdo": "http://file-server/*.pdf"
+    },
+    {
+      "id": 2,
+      "cve_proyecto": "2018-C02-A3-S-131466",
+      "titulo": "Diseño y construcción de equipo semiautomático para la extracción de cera de candelilla orgánica.",
+      "fecha_inicio": "",
+      "fecha_fin": "",
+      "monto_autorizado": "",
+      "estatus": "vigente",
+      "acuerdo": "FSIDITF/ST/093/19",
+      "link_acuerdo": "http://file-server/*.pdf"
+    },
+    {
+      "id": 3,
+      "cve_proyecto": "2017-C02-A4-S-131484",
+      "titulo": "lorem ipsum 2017-C02-A4-S-131484",
+      "fecha_inicio": "29/04/1999",
+      "fecha_fin": "29/04/2019",
+      "monto_autorizado": "999999999",
+      "estatus": "vigente",
+      "acuerdo": "LOREM911557Q-484",
+      "link_acuerdo": "http://file-server/*.pdf"
+    },
+    {
+      "id": 4,
+      "cve_proyecto": "2018-C04-A3-S-4457",
+      "titulo": "lorem ipsum 2018-C04-A3-S-4457",
+      "fecha_inicio": "29/04/1999",
+      "fecha_fin": "29/04/2019",
+      "monto_autorizado": "999999999",
+      "estatus": "vigente",
+      "acuerdo": "LOREM911557Q-484",
+      "link_acuerdo": "http://file-server/*.pdf"
+    },
+    {
+      "id": 5,
+      "cve_proyecto": "2019-C75-A43-S-13478",
+      "titulo": "lorem ipsum 2019-C75-A43-S-13478",
+      "fecha_inicio": "29/04/1999",
+      "fecha_fin": "29/04/2019",
+      "monto_autorizado": "999999999",
+      "estatus": "vigente",
+      "acuerdo": "LOREM911557Q-484",
+      "link_acuerdo": "http://file-server/*.pdf"
+    }
+  ]
+}
