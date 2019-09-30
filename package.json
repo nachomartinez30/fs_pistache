@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2"
+    "react-scripts": "3.1.2",
+    "react-tabulator": "^0.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
