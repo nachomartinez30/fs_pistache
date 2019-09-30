@@ -1,0 +1,44 @@
+/* 
+    GET muestra informacion de 1 proyecto PANTALLA_2
+    POST inicialializacion , actualizacion, eliminacion
+*/
+{
+    "cve_proyecto":,
+    "titulo":,
+    "responsable_tecnico":,
+    "responsable_admin":,
+    "acuerdo":,
+    "institucion_responsable":,
+    "monto_total_autorizado":,
+    "monto_total_ejercido":,
+    "procentaje_uso":,
+    "estatus":,
+    "carta_finiquito":,
+    "area_usuaria":,
+    "estapas":[
+        {
+            "num_etapa":1,
+            "fecha_inicio":,
+            "fecha_fin":,
+            "monto_autorizado":,
+            "monto_entregado":,
+        },...
+    ],
+    "documentos":[
+        {
+            "fecha":,
+            "titulo":,
+            "emisor":,
+            "descripcion":,
+            "source":/* link de descarga */,
+            "comentarios":[
+                {
+                    "autor":,
+                    "fecha":,
+                    "contenido":
+                },...
+            ]
+        },...
+    ]
+
+}

@@ -1,0 +1,18 @@
+/* 
+    GET muestra todos los proyectos para PANTALLA_1 
+*/
+{
+    "projects":[
+        {
+            "id":,
+            "cve_proyecto":,
+            "titulo":,
+            "fecha_inicio":,
+            "fecha_fin":,
+            "monto_autorizado":,
+            "estatus":,
+            "acuerdo":,
+            "link_acuerdo":
+        },...
+    ]
+}
