@@ -16,9 +16,19 @@ body {
 .login-cabecera{
   background-color: #A31C45;
   text-align: center;
-  color: #F2F2F2
+  color: #F2F2F2;
+  padding-top: 25px;
+  
 }
 
 .logos{
   align-content: center
+}
+
+.login-card{
+  /* border-radius: 25px */
+}
+
+.bordes{
+  border-radius: 25px
 }

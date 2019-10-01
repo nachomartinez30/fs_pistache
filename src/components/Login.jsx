@@ -12,8 +12,8 @@ export default class Login extends Component {
                     <div className='logos'>
                         <img src={logo_cnf}></img>
                     </div>
-                    <div className="col-md-8">
-                        <div className="card">
+                    <div className="col-md-8 bordes">
+                        <div className="card login-card">
                             <div className="login-cabecera">Acceso</div>
                             <div className="card-body">
                                 <form action={action} method={method}>
