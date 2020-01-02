@@ -1,202 +1,280 @@
 {
-  "project": [
-    {
-      "id": "2018-C02-A3-S-131466",
-      "cve_proyecto": "2018-C02-A3-S-131466",
-      "titulo": "Diseño y construcción de equipo semiautomático para la extracción de cera de candelilla orgánica.",
-      "responsable_tecnico": "Dr. Guillermo Cristian Gpe. Martinez Avila ",
-      "responsable_admin": "Lic. Omar Alejandro Leija Gutierrez ",
-      "acuerdo": "FSIDITF/2019/38/SO/15",
-      "institucion_responsable": "Universidad Autónoma de Nuevo León",
-      "monto_total_autorizado": "",
-      "monto_total_ejercido": "",
-      "procentaje_uso": "",
-      "estatus": "vigente",
-      "carta_finiquito": "No",
-      "area_usuaria": "Gerencia de Fomento a la Producción Forestal Sustentable",
-      "estapas": [
-        {
-          "num_etapa": 1,
-          "fecha_inicio": "20/06/2019",
-          "fecha_fin": "20/06/2020",
-          "monto_autorizado": "",
-          "monto_entregado": ""
-        },
-        {
-          "num_etapa": 2,
-          "fecha_inicio": "20/06/2020",
-          "fecha_fin": "20/06/2021",
-          "monto_autorizado": "",
-          "monto_entregado": ""
-        }
-      ],
-      "documentos": [
-        {
-          "fecha": "12/07/2019",
-          "titulo": "Oficio FSIDITF-ST-116-2019",
-          "emisor": "SA",
-          "descripcion": "Envío de productos de 1 era etapa para revisión de área usuaria ",
-          "source": "http://file-server/*.pdf",
-          "comentarios": [
-            {
-              "autor": "SA",
-              "fecha": "12/07/2019",
-              "contenido": "ea molestias quasi exercitationem repellat qui ipsa sit aut"
-            },
-            {
-              "autor": "ST",
-              "fecha": "24/10/2019",
-              "contenido": "nesciunt quas odio"
-            }
-          ]
-        },
-        {
-          "fecha": "12/10/2019",
-          "titulo": "Oficio FSIDITF-ST-120-2019",
-          "emisor": "SA",
-          "descripcion": "Envío de observaciones del area usuaria al Resp. Técn.",
-          "source": "http://file-server/*.pdf",
-          "comentarios": [
-            {
-              "autor": "ST",
-              "fecha": "24/04/2019",
-              "contenido": "nesciunt quas odio"
-            },
-            {
-              "autor": "SA",
-              "fecha": "12/07/2019",
-              "contenido": "ea molestias quasi exercitationem repellat qui ipsa sit aut"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "cve_proyecto": "2018-C02-A3-S-131444",
-      "titulo": "Diseño y construcción de equipo semiautomático para la extracción de cera de candelilla orgánica.",
-      "responsable_tecnico": "Dr. Guillermo Cristian Gpe. Martinez Avila ",
-      "responsable_admin": "Lic. Omar Alejandro Leija Gutierrez ",
-      "acuerdo": "FSIDITF/2019/38/SO/15",
-      "institucion_responsable": "Universidad Autónoma de Nuevo León",
-      "monto_total_autorizado": "",
-      "monto_total_ejercido": "",
-      "procentaje_uso": "",
-      "estatus": "vigente",
-      "carta_finiquito": "No",
-      "area_usuaria": "Gerencia de Fomento a la Producción Forestal Sustentable",
-      "estapas": [
-        {
-          "num_etapa": 1,
-          "fecha_inicio": "20/06/2019",
-          "fecha_fin": "20/06/2020",
-          "monto_autorizado": "",
-          "monto_entregado": ""
-        },
-        {
-          "num_etapa": 2,
-          "fecha_inicio": "20/06/2020",
-          "fecha_fin": "20/06/2021",
-          "monto_autorizado": "",
-          "monto_entregado": ""
-        }
-      ],
-      "documentos": [
-        {
-          "fecha": "12/07/2019",
-          "titulo": "Oficio FSIDITF-ST-116-2019",
-          "emisor": "SA",
-          "descripcion": "Envío de productos de 1 era etapa para revisión de área usuaria ",
-          "source": "http://file-server/*.pdf",
-          "comentarios": [
-            {
-              "autor": "SA",
-              "fecha": "12/07/2019",
-              "contenido": "ea molestias quasi exercitationem repellat qui ipsa sit aut"
-            },
-            {
-              "autor": "ST",
-              "fecha": "24/10/2019",
-              "contenido": "nesciunt quas odio"
-            }
-          ]
-        },
-        {
-          "fecha": "12/10/2019",
-          "titulo": "Oficio FSIDITF-ST-120-2019",
-          "emisor": "SA",
-          "descripcion": "Envío de observaciones del area usuaria al Resp. Técn.",
-          "source": "http://file-server/*.pdf",
-          "comentarios": [
-            {
-              "autor": "ST",
-              "fecha": "24/04/2019",
-              "contenido": "nesciunt quas odio"
-            },
-            {
-              "autor": "SA",
-              "fecha": "12/07/2019",
-              "contenido": "ea molestias quasi exercitationem repellat qui ipsa sit aut"
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "all": [
     {
       "id": 1,
-      "cve_proyecto": "2017-4-292577",
-      "titulo": "Diseño de un sistema forestal para selvas productivas de México",
-      "fecha_inicio": "29/04/2017",
-      "fecha_fin": "15/05/2020",
-      "monto_autorizado": "3103449.80",
-      "estatus": "vigente",
-      "acuerdo": "FSIDITF/2018/36/SO/10",
-      "link_acuerdo": "http://file-server/*.pdf"
+      "cve_proyecto": "MI PROYECTO",
+      "titulo": "PROYECTO FONDO",
+      "responsable_tecnico": "LOREM ipsum",
+      "responsable_admin": "LOREM",
+      "acuerdo": "LOREM",
+      "link_acuerdo": "http://187.218.230.30/filesconafor/userfiles/LGTAIP/oficio_2018-C02-A3-S-131466.pd",
+      "institucion_responsable": "LOREM",
+      "fecha_fin": "2020-01-01",
+      "fecha_inicio": "2019-01-01",
+      "contacto1": "Samantha",
+      "contacto2": "LOREM",
+      "contacto3": "LOREM",
+      "estatus": "concluido",
+      "semaforo": "medio",
+      "carta_finiquito": "no",
+      "area_usuaria": "GRF",
+      "monto_total_autorizado": "13000.00",
+      "monto_total_ejercido": "789.56",
+      "procentaje_uso": "63",
+      "etapas": [
+        {
+          "id": "38c36e5f-cf22-429e-9164-e27bd952031c",
+          "fecha_inicio": "",
+          "fecha_fin": "",
+          "monto_ejercido": "15654"
+        },
+        {
+          "id": "30278558-d9b0-4c62-8797-bdbc01aac129",
+          "fecha_inicio": "",
+          "fecha_fin": "",
+          "monto_ejercido": ""
+        },
+        {
+          "id": "daf3748b-64a7-4705-8e49-500df90b76dd",
+          "fecha_inicio": "",
+          "fecha_fin": "",
+          "monto_ejercido": ""
+        },
+        {
+          "id": "aad80b68-e07f-4be0-affc-de5e04851e35",
+          "fecha_inicio": "",
+          "fecha_fin": "",
+          "monto_ejercido": ""
+        }
+      ],
+      "documentos": [
+        {
+          "id": "2c1c2e91-8879-4f15-bf0f-1734283c5a96",
+          "turno": "st",
+          "fecha": "2018-10-30",
+          "titulo": "Oficio FSIDITF-ST-116-2019",
+          "autor": "Secretario Administrativo",
+          "comentarios": [
+            {
+              "autor": "Secretario Técnico",
+              "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula sollicitudin ornare. Nullam lobortis, leo ac faucibus congue, est nunc pulvinar nisl, et rutrum neque diam vel metus.",
+              "date": "2019-10-24"
+            },
+            {
+              "autor": "Ignacio Martinez",
+              "descripcion": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Secretario Administrativo",
+              "descripcion": "Donec laoreet vel nibh sed egestas. Pellentesque vitae vehicula risus. Mauris iaculis nibh at metus malesuada, non auctor massa commodo. Sed sagittis egestas nisi vel commodo.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Ignacio Martinez",
+              "descripcion": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Secretario Administrativo",
+              "descripcion": "Donec laoreet vel nibh sed egestas. Pellentesque vitae vehicula risus. Mauris iaculis nibh at metus malesuada, non auctor massa commodo. Sed sagittis egestas nisi vel commodo.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Ignacio Martinez",
+              "descripcion": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Secretario Administrativo",
+              "descripcion": "Donec laoreet vel nibh sed egestas. Pellentesque vitae vehicula risus. Mauris iaculis nibh at metus malesuada, non auctor massa commodo. Sed sagittis egestas nisi vel commodo.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Ignacio Martinez",
+              "descripcion": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Secretario Administrativo",
+              "descripcion": "Donec laoreet vel nibh sed egestas. Pellentesque vitae vehicula risus. Mauris iaculis nibh at metus malesuada, non auctor massa commodo. Sed sagittis egestas nisi vel commodo.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Ignacio Martinez",
+              "descripcion": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Secretario Administrativo",
+              "descripcion": "Donec laoreet vel nibh sed egestas. Pellentesque vitae vehicula risus. Mauris iaculis nibh at metus malesuada, non auctor massa commodo. Sed sagittis egestas nisi vel commodo.",
+              "date": "2019-10-24 "
+            }
+          ]
+        },
+        {
+          "id": "d39866bf-d1d2-4cda-abca-d3f0ab27bc39",
+          "turno": "cerrado",
+          "fecha": "2018-07-03",
+          "titulo": "Oficio D3F0AB27BC39-ST-421-2019",
+          "autor": "Secretario Técnico",
+          "comentarios": [
+            {
+              "autor": "Ignacio Martinez",
+              "descripcion": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Secretario Administrativo",
+              "descripcion": "Donec laoreet vel nibh sed egestas. Pellentesque vitae vehicula risus. Mauris iaculis nibh at metus malesuada, non auctor massa commodo. Sed sagittis egestas nisi vel commodo.",
+              "date": "2019-10-24 "
+            },
+            {
+              "autor": "Secretario Técnico",
+              "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula sollicitudin ornare. Nullam lobortis, leo ac faucibus congue, est nunc pulvinar nisl, et rutrum neque diam vel metus.",
+              "date": "2019-10-24"
+            }
+          ]
+        },
+        {
+          "id": "7c619d29-d9a6-47aa-a1a1-ee0b63ef4dcd",
+          "fecha": "2019-07-12",
+          "turno": "cerrado",
+          "titulo": "Oficio EE0B63EF4DCD-FSIDITF-2019",
+          "autor": "Área usuaria",
+          "comentarios": [
+            {
+              "autor": "Secretario Administrativo",
+              "descripcion": "Donec laoreet vel nibh sed egestas. Pellentesque vitae vehicula risus. Mauris iaculis nibh at metus malesuada, non auctor massa commodo. Sed sagittis egestas nisi vel commodo.",
+              "date": "2019-10-24 "
+            }
+          ]
+        },
+        {
+          "id": "d17c13ab-b226-426b-8bbe-447bbbb50eaa",
+          "fecha": "2019-01-21",
+          "turno": "cerrado",
+          "titulo": "Oficio D17C13AB-FSIDITF-2019",
+          "autor": "Javier Ortega Preciado",
+          "comentarios": []
+        }
+      ]
     },
     {
-      "id": 2,
-      "cve_proyecto": "2018-C02-A3-S-131466",
-      "titulo": "Diseño y construcción de equipo semiautomático para la extracción de cera de candelilla orgánica.",
-      "fecha_inicio": "",
-      "fecha_fin": "",
-      "monto_autorizado": "",
+      "cve_proyecto": "EJEMPLO",
+      "titulo": "LOREM",
+      "responsable_tecnico": "LOREM",
+      "responsable_admin": "LOREM",
+      "acuerdo": "LOREM",
+      "link_acuerdo": "http://187.218.230.30/filesconafor/userfiles/LGTAIP/oficio_2018-C02-A3-S-131466.pd",
+      "institucion_responsable": "LOREM",
+      "fecha_fin": "2020-01-01",
+      "fecha_inicio": "2019-01-01",
+      "contacto1": "LOREM",
+      "contacto2": "LOREM",
+      "contacto3": "LOREM",
       "estatus": "vigente",
-      "acuerdo": "FSIDITF/ST/093/19",
-      "link_acuerdo": "http://file-server/*.pdf"
+      "semaforo": "alto",
+      "carta_finiquito": "no",
+      "area_usuaria": "gif",
+      "monto_total_autorizado": "888888",
+      "monto_total_ejercido": "16",
+      "procentaje_uso": "89",
+      "etapas": [
+        {
+          "id": "4920bd62-57d3-4a8d-8bda-783bda41f351",
+          "fecha_inicio": "2019-11-21",
+          "fecha_fin": "2019-11-21",
+          "monto_ejercido": "23855.12"
+        },
+        {
+          "id": "b57400a0-5105-4ed1-84e5-537828b06300",
+          "fecha_inicio": "2019-11-21",
+          "fecha_fin": "2019-11-22",
+          "monto_ejercido": "6666.66"
+        }
+      ],
+      "documentos": [],
+      "id": 2
     },
     {
-      "id": 3,
-      "cve_proyecto": "2017-C02-A4-S-131484",
-      "titulo": "lorem ipsum 2017-C02-A4-S-131484",
-      "fecha_inicio": "29/04/1999",
-      "fecha_fin": "29/04/2019",
-      "monto_autorizado": "999999999",
+      "cve_proyecto": "PD-EJEMPLO-LOREM-1245",
+      "titulo": "proyecto de ejemplo",
+      "responsable_tecnico": "res Tec",
+      "responsable_admin": "res Admin",
+      "acuerdo": "DFSHD/12424/kdj-24",
+      "link_acuerdo": "http://localhost/all/3",
+      "institucion_responsable": "ECOSUR",
+      "fecha_fin": "2020-12-31",
+      "fecha_inicio": "2019-01-01",
+      "contacto1": "ignacio martinez",
+      "contacto2": "jorge juradpo",
+      "contacto3": "Manuel Peralta",
       "estatus": "vigente",
-      "acuerdo": "LOREM911557Q-484",
-      "link_acuerdo": "http://file-server/*.pdf"
+      "semaforo": "medio",
+      "carta_finiquito": "no",
+      "area_usuaria": "NRHG",
+      "monto_total_autorizado": "4555.23",
+      "monto_total_ejercido": "424.45",
+      "procentaje_uso": "15",
+      "etapas": [],
+      "documentos": [],
+      "id": 3
     },
     {
       "id": 4,
-      "cve_proyecto": "2018-C04-A3-S-4457",
-      "titulo": "lorem ipsum 2018-C04-A3-S-4457",
-      "fecha_inicio": "29/04/1999",
-      "fecha_fin": "29/04/2019",
-      "monto_autorizado": "999999999",
+      "cve_proyecto": "Tercer proyecto",
+      "titulo": "titulo",
+      "responsable_tecnico": "resp tec",
+      "responsable_admin": "res admin",
+      "acuerdo": "GGJHGJD-54654",
+      "link_acuerdo": "http://187.218.230.30/filesconafor/userfiles/LGTAIP/oficio_2018-C02-A3-S-131466.pd",
+      "institucion_responsable": "ECOSUR",
+      "fecha_fin": "2023-12-31",
+      "fecha_inicio": "2019-12-31",
+      "contacto1": "contacto uno ",
+      "contacto2": "contacto dos ",
+      "contacto3": "contacto tres",
       "estatus": "vigente",
-      "acuerdo": "LOREM911557Q-484",
-      "link_acuerdo": "http://file-server/*.pdf"
+      "semaforo": "medio",
+      "carta_finiquito": "no",
+      "area_usuaria": "GRGHE",
+      "monto_total_autorizado": "45687.46",
+      "monto_total_ejercido": "46546.23",
+      "procentaje_uso": "34",
+      "etapas": [],
+      "documentos": []
     },
     {
-      "id": 5,
-      "cve_proyecto": "2019-C75-A43-S-13478",
-      "titulo": "lorem ipsum 2019-C75-A43-S-13478",
-      "fecha_inicio": "29/04/1999",
-      "fecha_fin": "29/04/2019",
-      "monto_autorizado": "999999999",
+      "cve_proyecto": "4-TPROYECTO",
+      "titulo": "TITULO",
+      "responsable_tecnico": "NOMBRE",
+      "responsable_admin": "RESPO",
+      "acuerdo": "LO",
+      "link_acuerdo": "LO",
+      "institucion_responsable": "ECOSUR",
+      "fecha_fin": "2019-12-31",
+      "fecha_inicio": "2019-12-31",
+      "contacto1": "LROEM",
+      "contacto2": "LO",
+      "contacto3": "LO",
       "estatus": "vigente",
-      "acuerdo": "LOREM911557Q-484",
-      "link_acuerdo": "http://file-server/*.pdf"
+      "semaforo": "bajo",
+      "carta_finiquito": "no",
+      "area_usuaria": "GRHR",
+      "monto_total_autorizado": "15645.16",
+      "monto_total_ejercido": "4654.1",
+      "procentaje_uso": "68",
+      "etapas": [
+        {
+          "id": "f5b1131d-c987-4403-bc9e-3623e044c16f",
+          "fecha_inicio": "2019-12-02",
+          "fecha_fin": "2019-12-18",
+          "monto_ejercido": "1565.45"
+        }
+      ],
+      "documentos": [],
+      "id": 5
     }
   ]
 }

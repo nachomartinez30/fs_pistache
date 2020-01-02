@@ -1,34 +1,329 @@
 body {
-  background-color: #F2F2F2;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
 }
-
-.header {
-  background-color: #A31C45;
+.statusActivo {
+  background-color: #158b0a44 !important;
+  color: black !important;
+}
+.statusCancelado {
+  background-color: #aa1b1146 !important;
+  color: black !important;
+}
+.statusConcluido {
+  background-color: #838383 !important;
+  color: #ffffff !important;
+}
+.statusConcluido2 {
+  background-color: #4dacff41 !important;
+  color: black !important;
+}
+.w80 {
+  width: 80% !important;
+}
+.w85 {
+  width: 85% !important;
+}
+.w90 {
+  width: 90% !important;
+}
+.w95 {
+  width: 95% !important;
+}
+.w100 {
+  width: 100% !important;
+}
+.textCenter {
   text-align: center;
-  color: #F2F2F2
 }
-
+.textRight {
+  text-align: right;
+}
+.textRightForce {
+  text-align: right !important;
+}
+.paddingBody {
+  padding: 0 0.3em;
+}
+.fullContainer {
+  height: 90vh;
+}
+.upDownMargin {
+  margin: 1em 0;
+}
+.bottomMargin {
+  margin-bottom: 1em;
+}
+.topMargin {
+  margin-top: 1em;
+}
+.header {
+  background-color: #a31c45;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+.header-font {
+  text-align: center;
+  color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
 .footer {
   background-color: #184914;
-  color: #F2F2F2
-}
-
-.login-cabecera{
-  background-color: #A31C45;
+  color: #f2f2f2;
+  margin-top: 0.5em;
   text-align: center;
-  color: #F2F2F2;
-  padding-top: 25px;
-  
+}
+.login-cabecera {
+  background-color: #a31c45;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+  color: #f2f2f2;
+  padding: 12px 0px;
+  border-radius: 10px 10px 0 0;
+}
+.scrollContent {
+  overflow: auto;
+  height: 61vh;
+ 
+}
+.logos {
+  align-content: center;
+}
+.card {
+  border-radius: 10px 10px !important;
+}
+.card-body {
+  border-radius: 10px 10px 0 0;
+}
+.bordes {
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 5px 5px #bbbbbb;
+}
+.separadorGris {
+  content: "";
+  background-color: #bbbbbb;
+}
+.btn-blanco {
+  color: #ffffff !important;
+  background-color: #a31c45 !important;
+  border-color: #ffffff !important;
+}
+.btn-blanco:hover,
+.btn-blanco:active {
+  color: #a31c45 !important;
+  background-color: #ffffff !important;
+  border-color: #a31c45 !important;
+}
+.status-botones {
+  margin-top: 0.5em;
+}
+.not-found-404 {
+  text-align: center;
+  font-size: 200px;
+  color: #a31c45;
+}
+.not-found-text {
+  text-align: center;
+  color: #a31c45;
+}
+.desbordeTexto {
+  word-break: break-word;
+}
+.buscador {
+  background-color: #ffeec5 !important;
+}
+.botonesMain {
+  margin: 0 0.1em;
+  width: 30%;
 }
 
-.logos{
-  align-content: center
+.tablaForzada > table {
+  table-layout: auto !important;
+}
+.react-bootstrap-table-page-btns-ul {
+  float: right;
+  margin-top: 1em;
+}
+.rojo {
+  color: red;
+}
+.margenes {
+  padding: 1em 0;
+}
+.alignResultados {
+  text-align: left;
+}
+.fontSize > tbody tr td {
+  font-size: 14px;
+}
+.botonesMain {
+  margin: 0.3em 0em;
+  width: 100%;
+}
+.vAlign {
+  vertical-align: middle !important;
+}
+.overflowScroll {
+  height: 10px;
+  overflow-x: hidden !important;
+}
+.borders {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 0.3em;
+}
+.vigenciaV {
+  padding: 0.7em 0;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #35cc2b;
+}
+.vigenciaR {
+  padding: 0.7em 0;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #a31c45;
+}
+.vigenciaA {
+  padding: 0.7em 0;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #ffe800;
+}
+.riesgoA {
+  font-size: 35px !important;
+  color: #2b7ecc;
+}
+.riesgoV {
+  font-size: 35px !important;
+  color: #35cc2b;
+}
+.riesgoR {
+  font-size: 35px !important;
+  color: #a31c45;
 }
 
-.login-card{
-  /* border-radius: 25px */
+.selectIconos {
+  font-size: 16px !important;
+}
+.header .floatButton {
+  width: 100%;
+}
+.floatButtonCard {
+  float: right;
+  right: 10px;
+}
+/*------------*/
+.comentariosDocumentos {
+  background-color: rgb(235, 224, 224);
+  height: 70vh;
+  overflow-y: scroll;
 }
 
-.bordes{
-  border-radius: 25px
+.menuComentarios {
+  background-color: rgb(235, 224, 224);
+  height: 80vh;
+  overflow-y: scroll;
+  right: -95% !important;
+}
+
+.openMenu {
+  width: 20% !important;
+  background-color: rgb(235, 224, 224);
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* .MuiDrawer-paper {
+  top: 0;
+  flex: 1 0 auto;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  outline: 0;
+  z-index: 1200;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+} */
+
+.personal .MuiFab-primary,
+.personal .MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #4285f4 !important;
+}
+.personalV .MuiButton-containedPrimary {
+  color: #fff;
+  width: 100%;
+  background-color: #00c853 !important;
+}
+.personalV .MuiButton-containedPrimary:hover {
+  background-color: #00652a !important;
+}
+.personalR .MuiFab-root {
+  color: #fff;
+  background-color: #a31c45 !important;
+}
+.personalR .MuiFab-root:hover {
+  background-color: #c93b65 !important;
+}
+.colorDocument {
+  background-color: #4dadff !important;
+}
+.etapasBtn {
+  margin: 0 !important;
+  padding: 0.29rem 0.8rem !important;
+}
+
+@media only screen and (max-width: 460px) {
+  .header {
+    background-color: #a31c45;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 0.5em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+  }
+  .alignResultados {
+    text-align: center;
+  }
+  .margenes {
+    padding: 0 0;
+  }
+  .desbordeTexto {
+    word-break: normal;
+  }
+  .botonesMain {
+    margin: 0.3em 0em;
+    width: 100%;
+  }
+  .tablaResponsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .floatButton {
+    float: right;
+    right: 10px;
+  }
+
+  .openMenu {
+    width: 90% !important;
+  }
+
+  .nav-link-adjust {
+    padding: 0.5rem 0.739rem !important;
+  }
+  .btn-adjust {
+    flex: none !important;
+  }
 }
