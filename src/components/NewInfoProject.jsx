@@ -5,7 +5,7 @@ import axios from 'axios';
 import { TextField } from "@material-ui/core";
 /* date Picker */
 
-const API = 'http://localhost/pistache/api/project'
+const API = 'http://187.218.230.38:81/pistache/api/project'
 // const API = 'http://localhost:3001/all'
 
 class NewProject extends Component {

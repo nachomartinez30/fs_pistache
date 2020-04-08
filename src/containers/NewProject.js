@@ -1,6 +1,6 @@
 import React from 'react'
 import NewInfoProject from '../components/NewInfoProject';
-import Footer from "../components/Footer";
+
 import { BtnVolver } from '../components/BtnVolver';
 
 const NewProject = () => (

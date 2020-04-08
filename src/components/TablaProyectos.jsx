@@ -6,7 +6,7 @@ import filterFactory, { selectFilter, textFilter } from 'react-bootstrap-table2-
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory, { PaginationProvider, PaginationTotalStandalone, PaginationListStandalone } from 'react-bootstrap-table2-paginator';
 
-import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
+import ToolkitProvider from 'react-bootstrap-table2-toolkit';
 import { Link } from 'react-router-dom'
 
 const TablaProyectos = (propiedades) => {
@@ -91,12 +91,12 @@ const TablaProyectos = (propiedades) => {
         'cancelado': 'Cancelado'
     };
 
-    const FILTRO_ESTADO = {
-        options: opcionesEstado,
-        defaultValue: null,
-        placeholder: '---Todos---',
-        className: ''
-    }
+    // const FILTRO_ESTADO = {
+    //     options: opcionesEstado,
+    //     defaultValue: null,
+    //     placeholder: '---Todos---',
+    //     className: ''
+    // }
 
 
     const columns = [

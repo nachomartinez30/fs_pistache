@@ -7,8 +7,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 /* Iconos */
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import { ExitToApp,  } from '@material-ui/icons';
+import { ExitToApp, } from '@material-ui/icons';
 import AddIcon from '@material-ui/icons/Add';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
@@ -23,7 +22,6 @@ const useStyles = makeStyles({
 });
 
 const SideBarNavigation = ({ setLoged }) => {
-    const classes = useStyles();
     const [state, setState] = React.useState({
         top: false,
         left: false,

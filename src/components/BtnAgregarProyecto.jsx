@@ -1,5 +1,4 @@
 import React from 'react'
-import MaterialIcon from 'material-icons-react';
 import { Link } from 'react-router-dom'
 import { AddBox } from '@material-ui/icons'
 import { Fab } from '@material-ui/core'

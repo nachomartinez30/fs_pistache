@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Main from '../containers/Main';
 import Login from '../components/Login';
-import SideBarNavigation from '../components/SideBarNavigation';
+// import SideBarNavigation from '../components/SideBarNavigation';
 import Project from "../containers/Project";
 import MetaTags from "react-meta-tags";
 import NotFound from '../components/NotFound';
@@ -19,7 +19,7 @@ const Rutas = () => {
     const [loged, setLoged] = useState(true)
 
     return (
-        <BrowserRouter basename='/pistache' >
+        <BrowserRouter>
             <Header
                 loged={loged}
                 setLoged={setLoged}

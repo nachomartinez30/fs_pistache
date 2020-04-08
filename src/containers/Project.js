@@ -55,7 +55,7 @@ const Project = (props) => {
   }
 
   const removeEtapa = async (id) => {
-    const API = 'http://localhost/pistache/api/project/etapas'
+    const API = 'http://187.218.230.38:81/pistache/api/project/etapas'
     try {
       const respuesta = await axios.delete(`${API}/${id}`);
 
@@ -82,7 +82,7 @@ const Project = (props) => {
   }
 
   const updateEtapa = async (data, index) => {
-    const API = 'http://localhost/pistache/api/project/etapas'
+    const API = 'http://187.218.230.38:81/pistache/api/project/etapas'
     try {
       const respuesta = await axios.put(API, data);
       if (respuesta.status === 200) {
@@ -97,7 +97,7 @@ const Project = (props) => {
 
   const getInfoProject = async () => {
     /* AXIOS para traer la informacion de un ID especifico */
-    const API = 'http://localhost/pistache/api/project/'
+    const API = 'http://187.218.230.38:81/pistache/api/project/'
     // const API = 'http://localhost:3001/all' /* Pruebas */
 
     const { id_proyecto } = props.match.params
@@ -174,7 +174,7 @@ const Project = (props) => {
 
     setDataProject(newData)
     try {
-      const url = 'http://localhost/pistache/api/project/' + dataProject.id
+      const url = 'http://187.218.230.38:81/pistache/api/project/' + dataProject.id
 
       const respuesta = await axios.put(url, newData);
 
@@ -199,7 +199,7 @@ const Project = (props) => {
     };
 
     try {
-      const url = 'http://localhost/pistache/api/project/etapas/'
+      const url = 'http://187.218.230.38:81/pistache/api/project/etapas/'
 
       const respuesta = await axios.post(url, newEtapa);
 

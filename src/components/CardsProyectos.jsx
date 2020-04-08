@@ -51,7 +51,7 @@ const CardsProyecto = ({ infoProyecto, recargarProyectos }) => {
 
 	const deletProject = async (idProyecto) => {
 
-		const API = `http://localhost/pistache/api/project/${idProyecto}`;
+		const API = `http://187.218.230.38:81/pistache/api/project/${idProyecto}`;
 		/* enviar por axios el id del proyecto */
 		try {
 			const resp = await axios.delete(API)

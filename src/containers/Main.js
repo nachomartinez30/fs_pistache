@@ -110,7 +110,7 @@ const Main = () => {
     }
 
     const getProyectos = async () => {
-        const API = 'http://localhost/pistache/api/projects/all';
+        const API = 'http://187.218.230.38:81/pistache/api/projects/all';
         // const API = 'http://localhost:3001/all';
 
         try {
