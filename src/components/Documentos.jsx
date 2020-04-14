@@ -12,7 +12,7 @@ const Documentos = ({ info, getCommits, color }) => {
                 <p className='ml-2 mt-2'><b>Autor: </b>{info.autor}</p>
                 <small className='mx-2 my-2'>{info.fecha}</small>
             </div>
-            <span className="badge badge-primary badge-pill">{info.comentarios.length}</span>
+            {/* <span className="badge badge-primary badge-pill">{(typeof info.comentarios.length != 'undefined') ? info.comentarios.length : null}</span> */}
         </li>
 
     )

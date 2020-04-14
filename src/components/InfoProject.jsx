@@ -203,7 +203,7 @@ const InfoProject = ({ info, actualizarInfoProject }) => {
               <div className="col-12"><h4>Contactos de Reporte</h4></div>
               <div className="col-md-4 my-3">
                 <TextField /**/
-                  label='Nombre / Apellido'
+                  label='Email 1'
                   fullWidth
                   variant='outlined'
                   inputRef={contacto1Ref}
@@ -215,7 +215,7 @@ const InfoProject = ({ info, actualizarInfoProject }) => {
               </div>
               <div className="col-md-4 my-3">
                 <TextField /**/
-                  label='Nombre / Apellido'
+                  label='Email 2'
                   fullWidth
                   variant='outlined'
                   inputRef={contacto2Ref}
@@ -226,7 +226,7 @@ const InfoProject = ({ info, actualizarInfoProject }) => {
               </div>
               <div className="col-md-4 my-3">
                 <TextField /**/
-                  label='Nombre / Apellido'
+                  label='Email 3'
                   fullWidth
                   variant='outlined'
                   inputRef={contacto3Ref}
