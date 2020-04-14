@@ -47,7 +47,16 @@ const CardsProyecto = ({ infoProyecto, recargarProyectos }) => {
 		return riesgo
 	}
 
-
+	const getColorStatus = (estatus) => {
+		switch (estatus) {
+			case 'vigente':
+				return 'V'
+			case 'cancelado':
+				return 'R'
+			default:
+				return 'Az'
+		}
+	}
 
 	const deletProject = async (idProyecto) => {
 
@@ -83,6 +92,8 @@ const CardsProyecto = ({ infoProyecto, recargarProyectos }) => {
 	const monto_total_autorizado = infoProyecto.monto_total_autorizado
 	const semaforo = infoProyecto.semaforo
 	const titulo = infoProyecto.titulo
+	const estatus = infoProyecto.estatus
+	const colorStatus = getColorStatus(estatus)
 	const riesgo = getRiesgo(semaforo)
 
 
@@ -107,7 +118,7 @@ const CardsProyecto = ({ infoProyecto, recargarProyectos }) => {
 							<div value="" type="text" className="w100 textCenter align-middle"><i className={`material-icons ${riesgo}`}>lens</i><br /><small>RIESGO </small></div>
 						</div>
 						<div className="col-md-6 col-6">
-							<label value="" type="text" className="borders w100 vigenciaV">vigente</label>
+							<label value="" type="text" className={`borders w100 vigencia${colorStatus}`}>{estatus}</label>
 						</div>
 					</div>
 				</div>

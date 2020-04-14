@@ -196,6 +196,12 @@ body {
   color: #ffffff;
   background-color: #ffe800;
 }
+.vigenciaAz {
+  padding: 0.7em 0;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #2b7ecc;
+}
 .riesgoA {
   font-size: 35px !important;
   color: #2b7ecc;
