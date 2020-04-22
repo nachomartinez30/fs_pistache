@@ -74,7 +74,6 @@ const Project = (props) => {
   const getCommits = (idDocumento) => {
     let documento = lodash.find({ ...documentos }, (buscar) => (buscar.id === idDocumento))
 
-
     setComentariosDocumento(documento.comentarios);
     setDocumentPressedId(idDocumento);
     setTurno(documento.turno);
@@ -85,6 +84,7 @@ const Project = (props) => {
     const API = 'http://187.218.230.38:81/pistache/api/project/etapas'
     try {
       const respuesta = await axios.put(API, data);
+      
       if (respuesta.status === 200) {
         setReloadProject(true)
         AlertSuccess('Actualizado');
@@ -112,6 +112,7 @@ const Project = (props) => {
 
     } catch (error) {
       AlertError('(Get Info Project)Tipo:' + error)
+      console.error(error);
     }
   }
 
@@ -120,9 +121,6 @@ const Project = (props) => {
     /* si necesita regargar el proyecto, consulta nuevamente la API */
     if (reloadProject) {
       getInfoProject()
-      console.log('====================================');
-      console.log('RECARGANDO...');
-      console.log('====================================');
     }
     setReloadProject(false)
   }, [reloadProject])
@@ -178,7 +176,8 @@ const Project = (props) => {
 
       const respuesta = await axios.put(url, newData);
 
-      if (respuesta.status === 200) {
+      if (respuesta.status === 201) {
+        console.log('rigth here');
         setReloadProject(true)
         AlertSuccess('Actualizado');
       }
@@ -329,7 +328,6 @@ const Project = (props) => {
         </div>
       </div>
       <div className="col-12 col-md-12">
-
         <ul className="nav nav-tabs mb-3 mt-2" id="pills-tab" role="tablist">
           <li className="nav-item">
             <a className="nav-link active nav-link-adjust" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Información</a>

@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
 import Swal from "sweetalert2";
+import { TextField, InputAdornment } from '@material-ui/core';
+import NumberFormat from 'react-number-format';
 // import AlertSuccess from './AlertSuccess';
 // import Axios from 'axios';
 
@@ -42,6 +44,28 @@ const Etapas = ({ index, data, addEtapa, updateEtapa, removeEtapa, updateData })
     })
   }
 
+  const NumberFormatCustom = (props) => {
+
+    /* Metodo para formatear los campos de contabilidad  */
+    const { inputRef, onChange, ...other } = props;
+
+    return (
+      <NumberFormat
+        {...other}
+        getInputRef={inputRef}
+        onValueChange={(values) => {
+          onChange({
+            target: {
+              name: props.name,
+              value: values.value,
+            },
+          });
+        }}
+        thousandSeparator
+      // isNumericString
+      />
+    );
+  }
 
   return (
     <div className="container">
@@ -52,28 +76,37 @@ const Etapas = ({ index, data, addEtapa, updateEtapa, removeEtapa, updateData })
           <div className="form-row align-items-end">
             <div className="col-md-3 col-12 mb-3">
               <label>Inicio </label>
-              <input
+              <TextField
                 ref={fecha_inicioRef}
+                variant='outlined'
                 type="date"
+                data-date=""
+                data-date-format="DD MMMM YYYY"
                 defaultValue={fecha_inicio}
                 className="form-control" />
             </div>
             <div className="col-md-3 col-12 mb-3">
               <label>Fin</label>
-              <input
+              <TextField
                 ref={fecha_finRef}
+                variant='outlined'
                 type="date"
                 defaultValue={fecha_fin}
                 className="form-control" />
             </div>
             <div className="col-md-3 col-12 mb-3">
               <label>Monto ejercido</label>
-              <input
+              <TextField
+                variant='outlined'
                 ref={monto_ejercidoRef}
-                type="number"
-                step="0.01"
+                type="text"
                 defaultValue={monto_ejercido}
-                className="form-control" />
+                className="form-control"
+                InputProps={{
+                  startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                  inputComponent: NumberFormatCustom,
+                }}
+              />
             </div>
 
             <div className="col-md-3 col-12 mb-3">
@@ -82,7 +115,7 @@ const Etapas = ({ index, data, addEtapa, updateEtapa, removeEtapa, updateData })
                   onClick={() => actualizarEtapa()}>
                   Confirmar
                     </button>
-                <button className='btn btn-danger etapasBtn' aria-disabled='true'
+                <button className='btn btn-danger etapasBtn' 
                   onClick={() => eliminarEtapa(data.id)}>
                   Quitar
                     </button>

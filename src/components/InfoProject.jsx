@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react'
 import AlertError from './AlertError'
 /* MATERIAL DESIGN */
-import { TextField, InputLabel, MenuItem, Select, FormControl } from "@material-ui/core";
+import { TextField, InputLabel, MenuItem, Select, FormControl, InputAdornment } from "@material-ui/core";
+import NumberFormat from 'react-number-format';
 
 
 
@@ -142,6 +143,30 @@ const InfoProject = ({ info, actualizarInfoProject }) => {
     let valor = ev.target.value;
     setporcentajeUso(valor)
   }
+
+  const NumberFormatCustom = (props) => {
+
+    /* Metodo para formatear los campos de contabilidad  */
+    const { inputRef, onChange, ...other } = props;
+
+    return (
+      <NumberFormat
+        {...other}
+        getInputRef={inputRef}
+        onValueChange={(values) => {
+          onChange({
+            target: {
+              name: props.name,
+              value: values.value,
+            },
+          });
+        }}
+        thousandSeparator
+      // isNumericString
+      />
+    );
+  }
+
 
 
 
@@ -375,28 +400,35 @@ const InfoProject = ({ info, actualizarInfoProject }) => {
                 />
               </div>
               <div className="col-md-4 col-6 my-3">
-                <TextField /**/
+
+                <TextField
+                  InputProps={{
+                    inputComponent: NumberFormatCustom,
+                    startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                  }}
                   label='Monto autorizado'
                   fullWidth
                   variant='outlined'
                   inputRef={monto_total_autorizadoRef}
                   name='monto_total_autorizado'
-                  step="0.01"
                   defaultValue={monto_total_autorizado}
-                  type="number"
+                  type="text"
                   required
                 />
               </div>
               <div className="col-md-4 col-6 my-3">
                 <TextField /**/
+                  InputProps={{
+                    inputComponent: NumberFormatCustom,
+                    startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                  }}
                   label='Monto ejercido'
                   fullWidth
                   variant='outlined'
                   inputRef={monto_total_ejercidoRef}
                   name='monto_total_ejercido'
-                  step="0.01"
                   defaultValue={monto_total_ejercido}
-                  type="number"
+                  type="text"
                   required
                 />
               </div>
