@@ -1,30 +1,30 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Swal from "sweetalert2";
 import { TextField, InputAdornment } from '@material-ui/core';
 import NumberFormat from 'react-number-format';
 // import AlertSuccess from './AlertSuccess';
 // import Axios from 'axios';
 
-const Etapas = ({ index, data, addEtapa, updateEtapa, removeEtapa, updateData }) => {
-
-
+const Etapas = ({ index, data, updateEtapa, removeEtapa,onChange }) => {
+  const [infoEtapa, setinfoEtapa] = useState({})
 
   const num_etapa = index + 1
-  const { monto_ejercido, fecha_inicio, fecha_fin } = data
+  const { monto_ejercido, fecha_inicio, fecha_fin } = infoEtapa
 
-  const fecha_inicioRef = useRef('')
-  const fecha_finRef = useRef('')
-  const monto_ejercidoRef = useRef('')
+  // const fecha_inicioRef = useRef('')
+  // const fecha_finRef = useRef('')
+  // const monto_ejercidoRef = useRef('')
 
 
   const actualizarEtapa = () => {
-    const etapaEditada = {
-      id: data.id,
-      fecha_inicio: fecha_inicioRef.current.value,
-      fecha_fin: fecha_finRef.current.value,
-      monto_ejercido: monto_ejercidoRef.current.value
-    }
-    updateEtapa(etapaEditada, index);
+    updateEtapa(infoEtapa, index);
+  }
+
+  const setInfo = (input) => {
+    setinfoEtapa({
+      ...infoEtapa,
+      [input.target.name]: input.target.value
+    })
   }
 
   const eliminarEtapa = (id) => {
@@ -77,7 +77,8 @@ const Etapas = ({ index, data, addEtapa, updateEtapa, removeEtapa, updateData })
             <div className="col-md-3 col-12 mb-3">
               <label>Inicio </label>
               <TextField
-                ref={fecha_inicioRef}
+                onChange={setInfo}
+                name='fecha_inicio'
                 variant='outlined'
                 type="date"
                 data-date=""
@@ -88,7 +89,8 @@ const Etapas = ({ index, data, addEtapa, updateEtapa, removeEtapa, updateData })
             <div className="col-md-3 col-12 mb-3">
               <label>Fin</label>
               <TextField
-                ref={fecha_finRef}
+                // ref={fecha_finRef}
+                nae='fecha_inicio'
                 variant='outlined'
                 type="date"
                 defaultValue={fecha_fin}
@@ -98,7 +100,9 @@ const Etapas = ({ index, data, addEtapa, updateEtapa, removeEtapa, updateData })
               <label>Monto ejercido</label>
               <TextField
                 variant='outlined'
-                ref={monto_ejercidoRef}
+
+                name='monto_ejercido'
+                onChange={setInfo}
                 type="text"
                 defaultValue={monto_ejercido}
                 className="form-control"
@@ -115,7 +119,7 @@ const Etapas = ({ index, data, addEtapa, updateEtapa, removeEtapa, updateData })
                   onClick={() => actualizarEtapa()}>
                   Confirmar
                     </button>
-                <button className='btn btn-danger etapasBtn' 
+                <button className='btn btn-danger etapasBtn'
                   onClick={() => eliminarEtapa(data.id)}>
                   Quitar
                     </button>

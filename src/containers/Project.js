@@ -25,6 +25,7 @@ import Comentarios from "../components/Comentario";
 import DocumentoAcciones from "../components/DocumentoAcciones";
 import BtnSubirDocumento from "../components/BtnSubirDocumento";
 import { BtnVolver } from "../components/BtnVolver";
+import EtapasRemaster from "../components/EtapasRemaster";
 
 
 const Project = (props) => {
@@ -50,9 +51,7 @@ const Project = (props) => {
   /* ====================================STATES==================================== */
 
   /* ====================================METODOS PARA MANEJO DE ETAPAS==================================== */
-  const addEtapa = () => {
-    setReloadEtapas(true)
-  }
+
 
   const removeEtapa = async (id) => {
     const API = 'http://187.218.230.38:81/pistache/api/project/etapas'
@@ -80,19 +79,7 @@ const Project = (props) => {
     setReloadDocumentos(true)
   }
 
-  const updateEtapa = async (data, index) => {
-    const API = 'http://187.218.230.38:81/pistache/api/project/etapas'
-    try {
-      const respuesta = await axios.put(API, data);
-      
-      if (respuesta.status === 200) {
-        setReloadProject(true)
-        AlertSuccess('Actualizado');
-      }
-    } catch (error) {
-      AlertError('(Update Info etapa) Tipo:' + error)
-    }
-  }
+  
   /* ====================================MEOTODOS PARA MANEJO DE ETAPAS==================================== */
 
   const getInfoProject = async () => {
@@ -129,7 +116,7 @@ const Project = (props) => {
   useEffect(() => {
     if (reloadEtapas) {
       insertEtapa()
-      // updateData()
+      updateData()
     }
     setReloadEtapas(false)
   }, [reloadEtapas])
@@ -341,11 +328,11 @@ const Project = (props) => {
         </ul>
         <div className="tab-content" id="pills-tabContent">
           {/* INFORMACION PROYECTO */}
-          <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div className="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             {(dataProject === '') ? null : <InfoProject info={dataProject} actualizarInfoProject={actualizarInfoProject} />}
           </div>
           {/* ETAPAS */}
-          <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div className="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             <h1 className='textCenter'>ETAPAS</h1>
             <div className="col-12 personalV">
               <Button
@@ -353,7 +340,7 @@ const Project = (props) => {
                 variant="contained"
                 size='medium'
                 startIcon={<AddIcon />}
-                onClick={() => addEtapa()}
+              // onClick={() => addEtapa()}
               >
                 Añadir Etapa
               </Button>
@@ -365,14 +352,13 @@ const Project = (props) => {
             {/* por cada etapa, un componente Etapa*/}
             {(etapas.length > 0) ? etapas.map((data, index) => {
               return (
-                <Etapas
+                <EtapasRemaster
                   key={index + '-' + data.id}
                   index={index}
                   data={data}
-                  updateEtapa={updateEtapa}
-                  removeEtapa={removeEtapa}
-                  addEtapa={addEtapa}
-                  updateData={updateData}
+                // updateEtapa={updateEtapa}
+                // setEtapa={setEtapas}
+                // removeEtapa={removeEtapa}
                 />
               )
             }) : null
