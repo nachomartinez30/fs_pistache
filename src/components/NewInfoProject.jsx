@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 import swalert from "sweetalert2";
 import axios from 'axios';
 /* MATERIAL DESIGN */
-import { TextField } from "@material-ui/core";
+import { TextField, InputAdornment } from "@material-ui/core";
+import removeCommas from '../helpers/removeCommas';
+import NumberFormatCustom from '../helpers/NumberFormatCustom';
+
 /* date Picker */
 
 const API = 'http://187.218.230.38:81/pistache/api/project'
-// const API = 'http://localhost:3001/all'
 
 class NewProject extends Component {
     state = {
@@ -115,8 +117,8 @@ class NewProject extends Component {
                     semaforo,
                     carta_finiquito,
                     area_usuaria,
-                    monto_total_autorizado,
-                    monto_total_ejercido,
+                    monto_total_autorizado: removeCommas(monto_total_autorizado),
+                    monto_total_ejercido: removeCommas(monto_total_ejercido),
                     procentaje_uso,
                     etapas: [],
                     documentos: []
@@ -377,12 +379,16 @@ class NewProject extends Component {
 
                                 <TextField /***/
                                     fullWidth
+                                    InputProps={{
+                                        inputComponent: NumberFormatCustom,
+                                        startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                                    }}
                                     label='Monto autorizado'
                                     name='monto_total_autorizado'
                                     inputProps={{ step: 0.01 }}
                                     value={this.state.monto_total_autorizado}
-                                    type="number"
-                                    placeholder="3,103,449.80"
+                                    type="text"
+                                    placeholder=""
                                     required
                                     onChange={(ev) => this.manejadorCambios(ev)}
                                 />
@@ -391,12 +397,16 @@ class NewProject extends Component {
 
                                 <TextField /***/
                                     fullWidth
+                                    InputProps={{
+                                        inputComponent: NumberFormatCustom,
+                                        startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                                    }}
                                     label='Monto ejercido'
                                     name='monto_total_ejercido'
                                     inputProps={{ step: 0.01 }}
                                     value={this.state.monto_total_ejercido}
-                                    type="number"
-                                    placeholder="2,676,662.00"
+                                    type="text"
+                                    placeholder=""
                                     required
                                     onChange={(ev) => this.manejadorCambios(ev)}
                                 />

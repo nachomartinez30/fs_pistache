@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import AlertError from './AlertError'
 /* MATERIAL DESIGN */
 import { TextField, InputLabel, MenuItem, Select, FormControl, InputAdornment } from "@material-ui/core";
-import NumberFormat from 'react-number-format';
+import NumberFormatCustom from '../helpers/NumberFormatCustom';
 
 
 
@@ -144,28 +144,28 @@ const InfoProject = ({ info, actualizarInfoProject }) => {
     setporcentajeUso(valor)
   }
 
-  const NumberFormatCustom = (props) => {
+  // const NumberFormatCustom = (props) => {
 
-    /* Metodo para formatear los campos de contabilidad  */
-    const { inputRef, onChange, ...other } = props;
+  //   /* Metodo para formatear los campos de contabilidad  */
+  //   const { inputRef, onChange, ...other } = props;
 
-    return (
-      <NumberFormat
-        {...other}
-        getInputRef={inputRef}
-        onValueChange={(values) => {
-          onChange({
-            target: {
-              name: props.name,
-              value: values.value,
-            },
-          });
-        }}
-        thousandSeparator
-      // isNumericString
-      />
-    );
-  }
+  //   return (
+  //     <NumberFormat
+  //       {...other}
+  //       getInputRef={inputRef}
+  //       onValueChange={(values) => {
+  //         onChange({
+  //           target: {
+  //             name: props.name,
+  //             value: values.value,
+  //           },
+  //         });
+  //       }}
+  //       thousandSeparator
+  //     // isNumericString
+  //     />
+  //   );
+  // }
 
 
 

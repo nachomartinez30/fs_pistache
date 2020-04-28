@@ -16,7 +16,7 @@ import AddIcon from '@material-ui/icons/Add';
 
 /* COMPONTES */
 import InfoProject from "../components/InfoProject";
-import Etapas from "../components/Etapas";
+
 import AlertError from "../components/AlertError";
 import AlertSuccess from "../components/AlertSuccess";
 import Documentos from "../components/Documentos";
@@ -25,7 +25,8 @@ import Comentarios from "../components/Comentario";
 import DocumentoAcciones from "../components/DocumentoAcciones";
 import BtnSubirDocumento from "../components/BtnSubirDocumento";
 import { BtnVolver } from "../components/BtnVolver";
-import EtapasRemaster from "../components/EtapasRemaster";
+import Etapas from "../components/Etapas";
+import removeCommas from "../helpers/removeCommas";
 
 
 const Project = (props) => {
@@ -66,7 +67,6 @@ const Project = (props) => {
     } catch (error) {
       AlertError('(Delete etapas) ' + error);
     }
-
   }
 
   /* Obtiene los numeros de comentarios por documento */
@@ -79,7 +79,7 @@ const Project = (props) => {
     setReloadDocumentos(true)
   }
 
-  
+
   /* ====================================MEOTODOS PARA MANEJO DE ETAPAS==================================== */
 
   const getInfoProject = async () => {
@@ -113,13 +113,13 @@ const Project = (props) => {
   }, [reloadProject])
 
   /* CUANDO SE ACTUALICE EL ESTADO DE ETAPAS */
-  useEffect(() => {
-    if (reloadEtapas) {
-      insertEtapa()
-      updateData()
-    }
-    setReloadEtapas(false)
-  }, [reloadEtapas])
+  // useEffect(() => {
+  //   if (reloadEtapas) {
+  //     insertEtapa()
+  //     updateData()
+  //   }
+  //   setReloadEtapas(false)
+  // }, [reloadEtapas])
 
 
   useEffect(() => {
@@ -156,6 +156,8 @@ const Project = (props) => {
     const newData = { ...dataProject }
     newData.etapas = etapas;
     newData.documentos = documentos;
+    newData.monto_total_autorizado = removeCommas(newData.monto_total_autorizado);
+    newData.monto_total_ejercido = removeCommas(newData.monto_total_ejercido);
 
     setDataProject(newData)
     try {
@@ -164,7 +166,7 @@ const Project = (props) => {
       const respuesta = await axios.put(url, newData);
 
       if (respuesta.status === 201) {
-        console.log('rigth here');
+
         setReloadProject(true)
         AlertSuccess('Actualizado');
       }
@@ -190,7 +192,7 @@ const Project = (props) => {
       const respuesta = await axios.post(url, newEtapa);
 
       if (respuesta.status === 200) {
-        setReloadProject(true)
+        setReloadDataProject(true)
         AlertSuccess('Actualizado');
       }
     } catch (error) {
@@ -328,11 +330,11 @@ const Project = (props) => {
         </ul>
         <div className="tab-content" id="pills-tabContent">
           {/* INFORMACION PROYECTO */}
-          <div className="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div className="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
             {(dataProject === '') ? null : <InfoProject info={dataProject} actualizarInfoProject={actualizarInfoProject} />}
           </div>
           {/* ETAPAS */}
-          <div className="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div className="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
             <h1 className='textCenter'>ETAPAS</h1>
             <div className="col-12 personalV">
               <Button
@@ -340,7 +342,7 @@ const Project = (props) => {
                 variant="contained"
                 size='medium'
                 startIcon={<AddIcon />}
-              // onClick={() => addEtapa()}
+                onClick={() => insertEtapa()}
               >
                 Añadir Etapa
               </Button>
@@ -352,13 +354,11 @@ const Project = (props) => {
             {/* por cada etapa, un componente Etapa*/}
             {(etapas.length > 0) ? etapas.map((data, index) => {
               return (
-                <EtapasRemaster
+                <Etapas
                   key={index + '-' + data.id}
                   index={index}
                   data={data}
-                // updateEtapa={updateEtapa}
-                // setEtapa={setEtapas}
-                // removeEtapa={removeEtapa}
+                  removeEtapa={removeEtapa}
                 />
               )
             }) : null
