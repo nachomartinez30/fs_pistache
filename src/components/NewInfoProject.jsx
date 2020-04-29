@@ -214,7 +214,7 @@ class NewProject extends Component {
 
                                 <TextField /***/
                                     fullWidth
-                                    label='Nombre / Apellido'
+                                    label='correo electronico'
                                     name='contacto1'
                                     value={this.state.contacto1}
                                     type="text"
@@ -227,7 +227,7 @@ class NewProject extends Component {
 
                                 <TextField /***/
                                     fullWidth
-                                    label='Nombre / Apellido'
+                                    label='correo electronico'
                                     name='contacto2'
                                     value={this.state.contacto2}
                                     type="text"
@@ -239,7 +239,7 @@ class NewProject extends Component {
 
                                 <TextField /***/
                                     fullWidth
-                                    label='Nombre / Apellido'
+                                    label='correo electronico'
                                     name='contacto3'
                                     value={this.state.contacto3}
                                     type="text"
